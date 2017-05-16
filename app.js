@@ -1,19 +1,22 @@
-//'use strict';
+'use strict';
 var user = prompt('What is your Jedi name?');
 console.log('user:' + user);
 
-alert('greetings padawan ' + user + ', I\'m thinking of a number 1-4, use the force and tell me what that number is');
+alert('greetings padawan ' + user + ', I\'m thinking of a number 1-10, use the force and tell me what that number is');
 var answer = prompt(user + ', you may guess up to 4 times. Please use the force and focus!');
-  for (i = 0; i < 4; i++) {
-    console.log('user\'s answer:' + answer);
-    if (answer === '4') {
-      alert('Yay good job! You read my mind!');
-      break;
-    } else {
-      alert('try again, and may the force be with you');
-      answer = prompt(user + ', you may guess up to 4 times. Please use the force and focus!');
-    }
+for (var i = 0; i < 4; i++) {
+  console.log('user\'s answer:' + answer);
+
+  if (answer === '4') {
+    alert('Yay good job! You read my mind!');
+    break;
+  } else if (answer < 4) {
+    alert('too low');
+  } else if (answer > 4) {
+    alert('too high');
   }
+  answer = prompt(user + ', you may guess up to 4 times. Please use the force and focus!');
+}
 
 var question1 = prompt('do you practice the dark side? Yes or no');
 console.log('question1:' + question1);
@@ -60,16 +63,9 @@ if (question5.toLowerCase() === 'yes' || question5.toLowerCase() === 'y') {
   alert('Good luck in this world padawan');
 }
 
-// <ol> Top 10 Jedi Resources
-//   <li> askyoda.com </li>
-//   <li> usetheforce.com </li>
-//   <li> thankluke.com </li>
-//   <li> jedisunite.com </li>
-//   <li> jedihotline.com </lil>
-//   <li> weforce.com </li>
-//   <li> jedeye.com </li>
-//   <li> darkpowers.com </li>
-//   <li> lightside.com </li>
-//   <li> askvader.com </li>
-//   <li> theempire </li>
-// </ol>
+var saber = ['green', 'blue', 'red', 'pink'];
+var count = 0;
+for (saber = 0;saber < 6; i++)
+
+  while (count !==3);
+count += 1;
